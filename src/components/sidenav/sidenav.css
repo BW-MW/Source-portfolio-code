@@ -9,9 +9,6 @@
   padding: 1.5rem;
 }
 
-.container-side-nav {
-  width: 100%;
-}
 .header-side-nav {
   display: flex;
   justify-content: space-between;
