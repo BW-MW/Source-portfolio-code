@@ -46,7 +46,21 @@
 .navbar-nav {
   display: grid;
   grid-gap: 1.2rem;
+  width: 100%;
+}
+.navbar-item {
+  position: relative;
+}
+.navbar-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+
+  height: 100%;
+  width: 2px;
+  background-color: var(--border-and-active-link);
 }
 .navbar-link {
+  margin-left: 1.2rem;
   font-size: 1.2rem;
 }
