@@ -1,6 +1,6 @@
 .side-nav {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   height: 100vh;
   width: 31%;
 
@@ -32,4 +32,21 @@
   max-width: 60%;
 
   text-transform: capitalize;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  margin-top: 1rem;
+
+  height: 40%;
+}
+.navbar-nav {
+  display: grid;
+  grid-gap: 1.2rem;
+}
+.navbar-link {
+  font-size: 1.2rem;
 }

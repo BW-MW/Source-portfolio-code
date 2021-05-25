@@ -1,0 +1,13 @@
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+
+  color: var(--white);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
