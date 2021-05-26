@@ -1,0 +1,4 @@
+function About() {
+  return <h1>Hello I'm About</h1>;
+}
+export default About;
