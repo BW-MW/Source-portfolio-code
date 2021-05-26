@@ -12,7 +12,7 @@ function mapLinks(routers) {
     return (
       <li className="navbar-item" key={route.key}>
         <Link className="navbar-link" to={route.path}>
-          {route.name}
+          {route.label}
         </Link>
       </li>
     );
