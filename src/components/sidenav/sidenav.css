@@ -48,7 +48,8 @@
   grid-gap: 1.2rem;
   width: 100%;
 }
-.navbar-item.active {
+.navbar-item.active,
+.navbar-item {
   position: relative;
 }
 .navbar-item.active::before {
@@ -60,6 +61,21 @@
   width: 2px;
   background-color: var(--border-and-active-link);
 }
+
+.navbar-item::before {
+  content: "";
+
+  position: absolute;
+  width: 2px;
+  height: 0;
+  background-color: var(--border-and-active-link);
+
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.navbar-item:hover::before {
+  height: 100%;
+}
+
 .navbar-link {
   margin-left: 1.2rem;
   font-size: 1.2rem;
