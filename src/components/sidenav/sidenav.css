@@ -48,10 +48,10 @@
   grid-gap: 1.2rem;
   width: 100%;
 }
-.navbar-item {
+.navbar-item.active {
   position: relative;
 }
-.navbar-item::before {
+.navbar-item.active::before {
   content: "";
   position: absolute;
   left: 0;
