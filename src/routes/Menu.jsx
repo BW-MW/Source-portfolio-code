@@ -9,6 +9,8 @@ function RenderLinks(props) {
     refs.current = refs.current?.slice(0, routers.length);
 
     refs.current.map((ref) => {
+      setWidthOnLi(ref);
+
       if (ref.id === "Home") ref.parentNode.classList.add("active");
 
       ref.addEventListener("click", (event) => {
@@ -40,6 +42,12 @@ function RenderLinks(props) {
       </li>
     );
   });
+}
+
+function setWidthOnLi(link) {
+  const linkWith = link.offsetWidth;
+  const li = link.parentNode;
+  li.style.width = `${linkWith * 1.3}px`;
 }
 
 export default RenderLinks;
