@@ -1,4 +1,9 @@
+import "./Portfolio.css";
 function Portfolio() {
-  return <h1>Hello I'm Portfolio</h1>;
+  return (
+    <header className="header-portfolio">
+      <h1 className="title">Portifólio</h1>
+    </header>
+  );
 }
 export default Portfolio;
