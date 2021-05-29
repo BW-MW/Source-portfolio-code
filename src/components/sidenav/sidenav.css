@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   height: 100vh;
-  width: 31%;
+  min-width: 300px;
 
   background-color: var(--bg-side-nav);
 
-  padding: 1.5rem;
+  padding: 35px 30px;
 }
 
 .header-side-nav {
@@ -19,8 +19,8 @@
 .photo {
   background-color: var(--white);
   border: 3.5px solid var(--border-and-active-link);
-  width: 110px;
-  height: 116px;
+  width: 100px;
+  height: 100px;
 }
 
 .name {
