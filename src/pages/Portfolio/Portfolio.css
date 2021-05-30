@@ -1,9 +1,6 @@
-.header-portfolio {
-  padding: 1.5rem;
-}
 .title {
   position: relative;
-  max-width: 160px;
+  max-width: 140px;
 }
 .title::after {
   content: "";
