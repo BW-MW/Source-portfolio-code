@@ -1,22 +1,22 @@
 const router = [
   {
     path: "/",
-    label: "Home",
+    label: "home",
     key: 0,
   },
   {
     path: "/sobre",
-    label: "Sobre",
+    label: "sobre",
     key: 1,
   },
   {
     path: "/portifolio",
-    label: "Portifólio",
+    label: "portifólio",
     key: 2,
   },
   {
     path: "/contato",
-    label: "Contato",
+    label: "contato",
     key: 3,
   },
 ];

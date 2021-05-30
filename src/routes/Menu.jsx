@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function RenderLinks(props) {
+  const currentLocation = useLocation();
+
   const { routers } = props;
   const refs = useRef([]);
 
@@ -10,8 +12,19 @@ function RenderLinks(props) {
 
     refs.current.map((ref) => {
       setWidthOnLi(ref);
+      const pathLength = currentLocation.pathname.length;
+      const pathName = currentLocation.pathname.slice(1, pathLength);
 
-      if (ref.id === "Home") ref.parentNode.classList.add("active");
+      if (pathName === ref.textContent) {
+        ref.parentNode.classList.add("active");
+      } else if (pathName === "" && ref.textContent === "home") {
+        ref.parentNode.classList.add("active");
+      } else if (
+        pathName === "portifolio" &&
+        ref.textContent === "portifólio"
+      ) {
+        ref.parentNode.classList.add("active");
+      }
 
       ref.addEventListener("click", (event) => {
         const currentNav = event.target;
@@ -34,7 +47,6 @@ function RenderLinks(props) {
         <Link
           className="navbar-link"
           to={route.path}
-          id={route.label}
           ref={(element) => (refs.current[i] = element)}
         >
           {route.label}
