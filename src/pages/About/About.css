@@ -1,24 +1,12 @@
-.container {
-  width: 100%;
-  max-width: 1000px;
-  height: 100vh;
-  padding-top: 47px;
-
-  color: var(--white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .side-dec {
-  width: 90%;
+  width: 100%;
   height: 15px;
-  margin: 0 15px;
+  margin: 0 1rem;
   background-color: var(--border-and-active-link);
 }
 
 .wrapper {
-  width: 80%;
+  width: 100%;
   height: 35px;
   display: flex;
   align-items: center;
@@ -26,5 +14,9 @@
 
 .description {
   margin-top: 2.5rem;
-  width: 80%;
+  width: 100%;
+
+  padding: 1rem;
+
+  color: var(--white);
 }

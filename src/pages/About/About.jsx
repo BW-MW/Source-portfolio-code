@@ -2,7 +2,7 @@ import PageMainTitle from "../../components/PageMainTitle";
 import "./About.css";
 function About() {
   return (
-    <div className="container">
+    <>
       <div className="wrapper">
         <div className="side-dec"></div>
         <PageMainTitle name="Weverton Diogo" />
@@ -23,7 +23,7 @@ function About() {
         perferendis fuga rem architecto odit laborum vitae quam quia accusantium
         iusto cumque qui aut?
       </div>
-    </div>
+    </>
   );
 }
 export default About;

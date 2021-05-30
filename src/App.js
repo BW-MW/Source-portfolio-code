@@ -9,7 +9,7 @@ function App() {
     <main className="App">
       <SideNav />
 
-      <section className="section">
+      <section className="container">
         <Router>
           <Routes />
         </Router>

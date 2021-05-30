@@ -8,14 +8,12 @@ import Portfolio from "../pages/Portfolio/Portfolio";
 
 function Routes() {
   return (
-    <main>
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/sobre" component={About} />
-        <Route path="/portifolio" component={Portfolio} />
-        <Route path="/contato" component={Contact} />
-      </Switch>
-    </main>
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/sobre" component={About} />
+      <Route path="/portifolio" component={Portfolio} />
+      <Route path="/contato" component={Contact} />
+    </Switch>
   );
 }
 
