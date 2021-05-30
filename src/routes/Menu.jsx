@@ -12,6 +12,7 @@ function RenderLinks(props) {
 
     refs.current.map((ref) => {
       setWidthOnLi(ref);
+
       const pathLength = currentLocation.pathname.length;
       const pathName = currentLocation.pathname.slice(1, pathLength);
 
@@ -25,19 +26,6 @@ function RenderLinks(props) {
       ) {
         ref.parentNode.classList.add("active");
       }
-
-      ref.addEventListener("click", (event) => {
-        const currentNav = event.target;
-        const currentLi = currentNav.parentNode;
-
-        for (let i in refs.current) {
-          const listNav = refs.current[i];
-
-          if (currentNav.textContent === listNav.textContent) {
-            currentLi.classList.add("active");
-          } else listNav.parentNode.classList.remove("active");
-        }
-      });
     });
   }, [routers]);
 
@@ -48,6 +36,7 @@ function RenderLinks(props) {
           className="navbar-link"
           to={route.path}
           ref={(element) => (refs.current[i] = element)}
+          onClick={(event) => handleClick(event, refs)}
         >
           {route.label}
         </Link>
@@ -61,5 +50,16 @@ function setWidthOnLi(link) {
   const li = link.parentNode;
   li.style.width = `${linkWith * 1.3}px`;
 }
+function handleClick(event, refs) {
+  const currentNav = event.target;
+  const currentLi = currentNav.parentNode;
 
+  for (let i in refs.current) {
+    const listNav = refs.current[i];
+
+    if (currentNav.textContent === listNav.textContent) {
+      currentLi.classList.add("active");
+    } else listNav.parentNode.classList.remove("active");
+  }
+}
 export default RenderLinks;
