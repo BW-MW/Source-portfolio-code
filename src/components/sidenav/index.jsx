@@ -1,7 +1,7 @@
-import "./sidenav.css";
+import "./styles.css";
 import { HashRouter as Router } from "react-router-dom";
 
-import RenderLinks from "./../../routes/Menu";
+import RenderLinks from "../../routes/Menu";
 import Routing from "../../routes/RoutesConfig";
 
 function SideNav() {

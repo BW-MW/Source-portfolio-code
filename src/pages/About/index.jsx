@@ -1,5 +1,5 @@
 import PageMainTitle from "../../components/PageMainTitle";
-import "./About.css";
+import "./styles.css";
 function About() {
   return (
     <>

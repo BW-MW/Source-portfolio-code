@@ -1,7 +1,7 @@
 import { HashRouter as Router } from "react-router-dom";
 
 import "./App.css";
-import SideNav from "./components/sidenav/sidenav.jsx";
+import SideNav from "./components/sidenav/index.jsx";
 import Routes from "./routes/Routes";
 
 function App() {
