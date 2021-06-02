@@ -16,7 +16,7 @@
 .main-content {
   margin-top: 2.5rem;
 
-  height: 85vh;
+  height: 90%;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
