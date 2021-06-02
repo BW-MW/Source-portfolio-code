@@ -5,6 +5,7 @@ import RenderLinks from "./../../routes/Menu";
 import Routing from "../../routes/RoutesConfig";
 
 function SideNav() {
+  console.log(window.innerWidth);
   return (
     <div className="side-nav">
       <header className="header-side-nav">

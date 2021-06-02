@@ -84,3 +84,11 @@
 
   text-transform: capitalize;
 }
+
+/* Responsive */
+
+@media (min-width: 320px) and (max-width: 500px) {
+  .name {
+    font-size: 1.3rem;
+  }
+}
