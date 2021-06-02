@@ -1,4 +1,4 @@
-import "./sidenav.css";
+import "./styles.css";
 import { HashRouter as Router } from "react-router-dom";
 
 import RenderLinks from "../../routes/Menu";

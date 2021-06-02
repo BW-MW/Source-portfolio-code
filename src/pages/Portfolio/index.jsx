@@ -1,4 +1,4 @@
-import "./Portfolio.css";
+import "./styles.css";
 function Portfolio() {
   return (
     <>
