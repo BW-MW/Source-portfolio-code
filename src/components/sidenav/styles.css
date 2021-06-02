@@ -87,8 +87,11 @@
 
 /* Responsive */
 
-@media (min-width: 320px) and (max-width: 500px) {
+@media (max-width: 991px) {
   .name {
     font-size: 1.3rem;
+  }
+  .photo {
+    margin-top: 1rem;
   }
 }

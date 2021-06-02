@@ -1,27 +1,18 @@
 import "./styles.css";
-import { HashRouter as Router } from "react-router-dom";
 
-import RenderLinks from "../../routes/Menu";
-import Routing from "../../routes/RoutesConfig";
+import Desktop from "./desktop";
 
+import Mobile from "./mobile";
 function SideNav() {
-  console.log(window.innerWidth);
-  return (
-    <div className="side-nav">
-      <header className="header-side-nav">
-        <div className="name">Bruno silas</div>
-        <div className="photo"></div>
-      </header>
+  return checking();
+}
 
-      <nav className="navbar">
-        <ul className="navbar-nav">
-          <Router>
-            <RenderLinks routers={Routing} />
-          </Router>
-        </ul>
-      </nav>
-    </div>
-  );
+function checking() {
+  if (window.innerWidth >= 992) {
+    return <Desktop />;
+  } else {
+    return <Mobile />;
+  }
 }
 
 export default SideNav;

@@ -13,3 +13,10 @@
 
   font-size: 2.2rem;
 }
+
+@media (max-width: 991px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+}
