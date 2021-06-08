@@ -10,8 +10,8 @@
   position: absolute;
 
   left: 0;
-
   bottom: -13px;
+
   width: 100px;
   height: 4px;
 
@@ -25,14 +25,11 @@
   display: grid;
   height: 85%;
   grid-template-columns: repeat(3, 1fr);
-  margin-top: 2.5rem;
-  grid-template-rows: auto;
+  margin-top: 3.5rem;
   grid-gap: 1rem;
 }
 
 .box {
-  margin: 1rem 0;
-  width: 100%;
   max-width: 430px;
   height: 100%;
   background-color: aqua;
