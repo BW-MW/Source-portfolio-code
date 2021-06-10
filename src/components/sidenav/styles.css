@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 370px;
+  min-width: 350px;
 
   background-color: var(--bg-side-nav);
 
@@ -30,8 +30,6 @@
   font-size: 2rem;
 
   font-family: "Roboto";
-
-  max-width: 60%;
 
   text-transform: capitalize;
 }

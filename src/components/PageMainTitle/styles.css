@@ -3,6 +3,7 @@ h1 {
   font-weight: bold;
   font-family: "Roboto";
 
-  width: 83%;
+  width: 100% ;
+  max-width: 190px;
   text-align: center;
 }
